@@ -9,7 +9,7 @@ header {
     justify-content: center;
     height: 100px;
 
-    .logo img { width: 140px; }
+    .logo img { width: 150px; }
 }
 
 @media (min-width: 768px) {
@@ -127,6 +127,7 @@ footer {
 
             .associate {
                 margin-bottom: 20px;
+                justify-content: center;
             }
         }
         .divisor {
