@@ -1,0 +1,56 @@
+//transform with vendor
+@mixin transform($transforms) {
+	-webkit-transform: $transforms;
+	-moz-transform: $transforms;
+	-ms-transform: $transforms;
+	transform: $transforms;
+}
+
+//transition with vendor
+@mixin transition($values){
+    -webkit-transition: $values;
+    -o-transition: $values;
+    transition: $values;
+}
+
+//center on Y, on X and both
+@mixin center-x(){
+      margin-left: auto;
+      margin-right: auto;
+}
+@mixin center-y($pos:relative){
+    position: $pos;
+    top: 50%;
+    @include transform(translateY(-50%));    
+}
+@mixin center-all($pos:relative){
+    position: $pos;
+    left: 50%;
+    top: 50%;
+    @include transform(translate(-50%, -50%));    
+}
+
+//Text to be replaced with image
+@mixin image-replacement() {
+    display:block;
+    outline: 0;
+    font-size:0;
+    line-height: 0;
+    text-indent: -9999em;
+    overflow: hidden;
+}
+
+//fix content leak in parent of floated elements
+@mixin clearfix() {
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+@mixin content-pattern($pos:absolute) {
+    content:"";
+    display: block;
+    position: $pos;
+}
