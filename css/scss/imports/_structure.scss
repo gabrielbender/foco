@@ -153,37 +153,39 @@ footer {
         }
         .associates-list {
             display: flex;
-        }
-        .associate {
-            &:not(:last-child) {
-                margin-right: 110px;
-                &::after{
-                    @include content-pattern;
-                    height: 39px;
-                    width: 23px;
-                    background-image: url("../imgs/divisor.png");
-                    right: -66px;
+
+            .associate {
+                &:not(:last-child) {
+                    margin-right: 110px;
+                    &::after{
+                        @include content-pattern;
+                        height: 39px;
+                        width: 23px;
+                        background-image: url("../imgs/divisor.png");
+                        right: -66px;
+                    }
+                }
+            }
+            .avatar {
+                height: 89px;
+                width: 89px;
+                min-width: 89px;
+                max-width: 89px;
+                margin-right: 30px;
+            }
+            .associate-details {
+                .instagram-profile {
+                    font-size: 18px;
+                }
+                .job-title {
+                    font-size: 20px;
+                }
+                .contact-links {
+                    font-size: 20px;
                 }
             }
         }
-        .avatar {
-            height: 89px;
-            width: 89px;
-            min-width: 89px;
-            max-width: 89px;
-            margin-right: 30px;
-        }
-        .associate-details {
-            .instagram-profile {
-                font-size: 18px;
-            }
-            .job-title {
-                font-size: 20px;
-            }
-            .contact-links {
-                font-size: 20px;
-            }
-        }
+        
 
         .social-networks {
             display: flex;
