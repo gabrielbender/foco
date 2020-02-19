@@ -81,10 +81,10 @@ header .logo img {
 
 @media (min-width: 768px) {
   header {
-    height: 174px;
+    height: 135px;
   }
   header .logo img {
-    width: 266px;
+    width: 240px;
   }
 }
 footer .footer-title {
@@ -126,7 +126,7 @@ footer .associates-list .associate-details .instagram-profile {
   text-decoration: none;
 }
 footer .associates-list .associate-details .job-title {
-  font-size: 16px;
+  font-size: 15px;
   text-decoration: none;
 }
 footer .associates-list .associate-details .contact-links {
@@ -185,6 +185,25 @@ footer .social-networks .instagram {
 footer .social-networks .facebook {
   background-image: url("../imgs/Facebook.png");
 }
+footer .tooltip {
+  display: none;
+  height: 45px;
+  padding: 0 15px;
+  border-radius: 5px;
+  background: #ccc;
+  font-size: 1.2em;
+  align-items: center;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+footer .active + .tooltip {
+  display: flex;
+}
 
 @media (max-width: 767.9999px) {
   footer .container {
@@ -203,7 +222,6 @@ footer .social-networks .facebook {
   }
   footer .associates-list .associate {
     margin-bottom: 20px;
-    justify-content: center;
   }
   footer .divisor {
     display: none;
@@ -214,7 +232,7 @@ footer .social-networks .facebook {
 }
 @media (min-width: 768px) {
   footer .container {
-    height: 151px;
+    height: 135px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -242,24 +260,29 @@ footer .social-networks .facebook {
     right: -66px;
   }
   footer .associates-list .avatar {
-    height: 89px;
-    width: 89px;
-    min-width: 89px;
-    max-width: 89px;
+    height: 75px;
+    width: 75px;
+    min-width: 75px;
+    max-width: 75px;
     margin-right: 30px;
   }
   footer .associates-list .associate-details .instagram-profile {
-    font-size: 18px;
+    font-size: 16px;
   }
   footer .associates-list .associate-details .job-title {
-    font-size: 20px;
+    font-size: 18px;
   }
   footer .associates-list .associate-details .contact-links {
-    font-size: 20px;
+    font-size: 18px;
   }
   footer .social-networks {
     display: flex;
     align-items: center;
+  }
+  footer .social-networks .social-icon {
+    min-width: 34px;
+    width: 34px;
+    height: 34px;
   }
 }
 .content {
@@ -268,7 +291,7 @@ footer .social-networks .facebook {
 
 @media (min-width: 768px) {
   .content {
-    height: calc(100vh - 325px);
+    height: calc(100vh - 270px);
   }
 }
 .container {
@@ -278,6 +301,16 @@ footer .social-networks .facebook {
   margin-right: auto;
 }
 
+@media (max-width: 767.9999px) {
+  .desktop-only {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+}
 .video-container {
   width: 100%;
   height: 100%;
@@ -288,8 +321,8 @@ footer .social-networks .facebook {
 }
 
 @media (max-width: 767.9999px) {
-  .video-desktop {
-    height: 100%;
+  .video-mobile {
+    width: 100%;
   }
 }
 @media (min-width: 768px) {
