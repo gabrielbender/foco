@@ -81,10 +81,10 @@ header .logo img {
 
 @media (min-width: 768px) {
   header {
-    height: 135px;
+    height: 115px;
   }
   header .logo img {
-    width: 240px;
+    width: 220px;
   }
 }
 footer .footer-title {
@@ -118,7 +118,7 @@ footer .associates-list .avatar img {
   transform: translate(-50%, -50%);
 }
 footer .associates-list .associate-details {
-  line-height: 160%;
+  line-height: 140%;
 }
 footer .associates-list .associate-details .instagram-profile {
   font-size: 14px;
@@ -232,13 +232,14 @@ footer .active + .tooltip {
 }
 @media (min-width: 768px) {
   footer .container {
-    height: 110px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   footer .footer-title {
     margin-right: 38px;
+    font-size: 22px;
   }
   footer .contacts {
     display: flex;
@@ -260,20 +261,20 @@ footer .active + .tooltip {
     right: -56px;
   }
   footer .associates-list .avatar {
-    height: 65px;
-    width: 65px;
-    min-width: 65px;
-    max-width: 75px;
-    margin-right: 25px;
+    height: 60px;
+    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    margin-right: 15px;
   }
   footer .associates-list .associate-details .instagram-profile {
-    font-size: 15px;
+    font-size: 14px;
   }
   footer .associates-list .associate-details .job-title {
-    font-size: 17px;
+    font-size: 14px;
   }
   footer .associates-list .associate-details .contact-links {
-    font-size: 17px;
+    font-size: 14px;
   }
   footer .social-networks {
     display: flex;
@@ -291,7 +292,7 @@ footer .active + .tooltip {
 
 @media (min-width: 768px) {
   .content {
-    height: calc(100vh - 245px);
+    height: calc(100vh - 205px);
   }
 }
 .container {
