@@ -148,6 +148,7 @@ footer .divisor {
   position: relative;
   height: 39px;
   width: 23px;
+  margin: 0 40px;
   background-image: url("../imgs/divisor.png");
 }
 footer .social-networks li:not(:last-child) {
@@ -235,7 +236,7 @@ footer .active + .tooltip {
     height: 90px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
   footer .footer-title {
     margin-right: 38px;
@@ -249,7 +250,7 @@ footer .active + .tooltip {
     display: flex;
   }
   footer .associates-list .associate:not(:last-child) {
-    margin-right: 90px;
+    margin-right: 104px;
   }
   footer .associates-list .associate:not(:last-child)::after {
     content: "";
@@ -258,7 +259,7 @@ footer .active + .tooltip {
     height: 39px;
     width: 23px;
     background-image: url("../imgs/divisor.png");
-    right: -56px;
+    right: -63px;
   }
   footer .associates-list .avatar {
     height: 60px;
