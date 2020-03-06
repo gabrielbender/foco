@@ -103,12 +103,15 @@ footer .associates-list .avatar {
   min-width: 60px;
   max-width: 60px;
   margin-right: 15px;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   overflow: hidden;
 }
 footer .associates-list .avatar img {
   display: block;
-  width: 92px;
+  width: 100%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
   position: relative;
   left: 50%;
   top: 50%;
